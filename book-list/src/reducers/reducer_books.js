@@ -1,8 +1,8 @@
 export default function() {
   return [
-    {title: "JS the good parts"},
-    {title: "Harry Potter"},
-    {title: "POODR"},
-    {title: "Real Simple"},
+    {title: "POODR", pages: 500},
+    {title: "The Goal", pages: 50},
+    {title: "The Well-Grounded Rubyist", pages: 500000},
+    {title: "The Black Echo", pages: 5001},
   ]
 }
