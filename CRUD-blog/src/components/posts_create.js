@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 import { createPost } from '../actions/index';
 
 class PostsCreate extends React.Component {
+  // getting context from a parent element, in this case the Router
   static contextTypes = {
     router: React.PropTypes.object
   }
@@ -12,7 +13,7 @@ class PostsCreate extends React.Component {
     this.props.createPost(props)
     .then(() => {
       //blog post created, navigate to home page
-      this.context.router.push('/')
+      this.context.router.push('/');
     })
   }
 
