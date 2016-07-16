@@ -29,7 +29,11 @@ class PostsShow extends React.Component {
           <h3>{this.props.post.title}</h3>
           <h6>Categories: {this.props.post.categories}</h6>
           <p>{this.props.post.content}</p>
-          <button onClick={this.deletePost.bind(this)} className='btn btn-info pull-xs-right'>Delete Post</button>
+          <button
+            onClick={this.deletePost.bind(this)}
+            className='btn btn-info pull-xs-right'>
+            Delete Post
+          </button>
       </div>
     )
   }
