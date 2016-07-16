@@ -10,11 +10,10 @@ class PostsIndex extends React.Component {
   }
 
   renderPosts() {
-    console.log(this.props.posts)
     return this.props.posts.map(function(post) {
       return(
-        <Link to={`posts/${post.id}`}>
-          <li className='list-group-item' key={post.id}>
+        <Link key={post.id} to={`posts/${post.id}`}>
+          <li className='list-group-item'>
               <span className='pull-xs-right'>{post.categories}</span>
               <strong>{post.title}</strong>
           </li>
